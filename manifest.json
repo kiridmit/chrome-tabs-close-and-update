@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Tabs Close And Update",
+  "version": "1.0",
+  "description": "An extension to close and update tabs using custom hotkeys",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "reload-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Up"
+      },
+      "description": "Reload the current tab"
+    },
+    "close-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Down"
+      },
+      "description": "Close the current tab"
+    }
+  }
+}
