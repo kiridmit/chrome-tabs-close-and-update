@@ -10,7 +10,7 @@
   "commands": {
     "reload-tab": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Down"
+        "default": "Ctrl+Shift+Up"
       },
       "description": "Reload the current tab"
     },
@@ -28,7 +28,7 @@
     },
     "restore-tab": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Up"
+        "default": "Ctrl+Shift+Down"
       },
       "description": "Restore the last closed tab."
     }
