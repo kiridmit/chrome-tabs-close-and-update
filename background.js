@@ -33,5 +33,12 @@ function createTab(currentTab) {
 }
 
 function restoreTab() {
-    chrome.sessions.restore();
+    chrome.sessions.getRecentlyClosed({ maxResults: 1 }, (sessions) => {
+        if (sessions.length > 0) {
+            const lastSession = sessions[0];
+            if (lastSession.tab) {
+                chrome.sessions.restore(lastSession.tab.sessionId);
+            }
+        }
+    });
 }
